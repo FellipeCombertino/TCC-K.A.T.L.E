@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2895129709525429014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229791556295291505}
+  - component: {fileID: 6386487251315533192}
+  - component: {fileID: 1462541000112491485}
+  m_Layer: 0
+  m_Name: ChatTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229791556295291505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895129709525429014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.3837, y: 1.18, z: 4.9531975}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6386487251315533192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895129709525429014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72f3f16a37c7cc418814ff8e7fa8741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needsToInteract: 1
+  chat:
+    speaker: 0
+    animSpeaker: {fileID: 0}
+    Interactive: 1
+    options:
+    - optionName: "Perguntar sobre a po\xE7\xE3o."
+      message: "A po\xE7\xE3o? \xC9 uma po\xE7\xE3o de luz que faz quem a toma brilhar
+        que nem um vagalume! \xC9 perfeita pra lugares escuros e sombrios, como a
+        caverna que voc\xEAs querem entrar. A po\xE7\xE3o precisa de uma fruta brilhante
+        que \xE9 encontrada na floresta por tr\xE1s dessa primeira porta.  "
+    - optionName: Perguntar sobre a loja.
+      message: "Minha loja? \xC9 bem pequena e simples\u2026 Mas conquistei v\xE1rios
+        compradores ass\xEDduos\u2026 Fa\xE7o po\xE7\xF5es pra todo tipo de situa\xE7\xE3o!
+        Mod\xE9stia a parte, sou muito habilidoso no meu trabalho!  "
+    firstQuestion: "Ol\xE1 aventureiros! Posso ajudar?"
+    runOnce: 1
+    chatStarted: 0
+    forceStop: 0
+    StopWhenGetOut: 0
+    canOverlap: 0
+    message:
+    - speaker: 5
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 0}
+      message: "Ol\xE1 aventureiros, eu sou o Timo e essa \xE9 minha loja de po\xE7\xF5es.
+        Buscam alguma em especial? Tenho v\xE1rias aqui: uma em sopro cria bolha
+        de sab\xE3o, uma que deixa sua pele mais resistente que uma pedra e at\xE9
+        uma de super pulo. V\xE3o querer alguma? \r"
+    - speaker: 2
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Ah n\xE3o, n\xE3o! Afonso nos falou algo sobre uma po\xE7\xE3o com
+        uma fruta que brilha...\r"
+    - speaker: 5
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Uma fruta que brilha? Hnm! Podem encontrar a fruta que brilha nessa
+        porta da frente! Se precisam de uma po\xE7\xE3o de luz, basta trazer a fruta
+        pra mim!\r"
+    - speaker: 1
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Sim! Precisamos da po\xE7\xE3o pra entrar numa caverna bem escura."
+    - speaker: 2
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Agrade\xE7o, Timo!"
+    - speaker: 5
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "N\xE3o \xE9 nada! At\xE9 outra hora, aventureiros. Estarei \xE0 disposi\xE7\xE3o. "
+    ran: 0
+--- !u!65 &1462541000112491485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895129709525429014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

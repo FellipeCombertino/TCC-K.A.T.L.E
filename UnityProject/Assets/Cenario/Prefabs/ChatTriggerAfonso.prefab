@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1938028901535527692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938028901535527795}
+  - component: {fileID: 1938028901535527793}
+  - component: {fileID: 1938028901535527794}
+  m_Layer: 12
+  m_Name: ChatTriggerAfonso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1938028901535527795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938028901535527692}
+  m_LocalRotation: {x: -0, y: 0.070042886, z: -0, w: 0.997544}
+  m_LocalPosition: {x: -0.48, y: 0, z: 0.09}
+  m_LocalScale: {x: 4.279251, y: 2.2066698, z: 4.363499}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 8.033, z: 0}
+--- !u!114 &1938028901535527793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938028901535527692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72f3f16a37c7cc418814ff8e7fa8741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needsToInteract: 1
+  chat:
+    speaker: 0
+    animSpeaker: {fileID: 0}
+    Interactive: 0
+    options:
+    - optionName: Perguntar sobre a fruta.
+      message: "A fruta de luz? Bom, a fruta nasce de uma \xE1rvore bem grande com
+        folhas rosas e verdes. A \xE1rvore fica na floresta al\xE9m da primeira porta
+        \xE0 direita! Mas tome cuidado, os cogumelos ficam a espreita de monstros
+        desavisados para roubar seus itens! "
+    - optionName: Perguntar sobre o Cogumelo.
+      message: "O Cogumelo? \xC9 o governante do Reino Fungi, eles ganham de n\xF3s
+        em n\xFAmeros, ent\xE3o tentamos seguir aquilo que ele diz, por isso n\xE3o
+        reagimos quando pegam os itens de n\xF3s. Ele \xE9 muito poderoso, al\xE9m
+        de ser extremamente ganancioso! Ele acumula mais itens que todos os monstrinhos
+        da vila juntos! Tomem cuidado, se o Ovo est\xE1 realmente com ele, voc\xEAs
+        devem se preparar para enfrent\xE1-lo\u2026 "
+    - optionName: Perguntar sobre a Loja.
+      message: "Quer saber sobre a minha loja? Eu apenas coleto alguns itens perdidos
+        e frutas que encontro nas minhas viagens! Amo trazer novidades aos monstrinhos
+        do mercado. Acumular e trocar \xE9 a minha vida! "
+    firstQuestion: "Ol\xE1 Kim! Preicsa de mais alguma coisa?"
+    runOnce: 1
+    chatStarted: 0
+    forceStop: 0
+    StopWhenGetOut: 0
+    canOverlap: 0
+    message:
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: e00123a4e10dc2f4ebe58686a053d00b, type: 3}
+      message: "Ol\xE1 viajante, aventureiro e\u2026  Ah, se n\xE3o \xE9 minha cliente
+        favorita! Vejo que se interessou pelo meu estoque, no que eu posso te ajudar
+        agora?\r"
+    - speaker: 2
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Na verdade eu queria aquele ovo que troquei com voc\xEA de volta,
+        eu tenho outras coisas que podem te interessar aqui. O ovo era desse meu
+        amigo aqui, foi tudo um mal entendido.\r"
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fdb5ceac2c3340c42b13a31278783287, type: 3}
+      message: Comigo?
+    - speaker: 2
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "Voc\xEA n\xE3o \xE9 o Afonzo?"
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: e00123a4e10dc2f4ebe58686a053d00b, type: 3}
+      message: "N\xE3o, n\xE3o, sou o Afonso. Afonzo \xE9 meu irm\xE3o. Mas ele falou
+        do seu ovo\u2026 Sinto muito pelo seu amigo, mas eu j\xE1 n\xE3o tenho mais
+        ele comigo.\r"
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fdb5ceac2c3340c42b13a31278783287, type: 3}
+      message: "Foi uma das primeiras coisas que os capangas do Cogumelo pegaram
+        no meu caminho pro Mercad\xE3o.\r"
+    - speaker: 1
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 0}
+      message: Cogumelo?
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fdb5ceac2c3340c42b13a31278783287, type: 3}
+      message: "Sim, ele tem uma grande influ\xEAncia e \xE9 bem perigoso. N\xF3s
+        aqui do mercado deixamos os seus capangas pegar o que eles quiserem de n\xF3s,
+        em troca eles deixam um espa\xE7o aqui na regi\xE3o.\r"
+    - speaker: 2
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fa459c43b52ffb441af592452475b20e, type: 3}
+      message: "N\xF3s temos que ir atr\xE1s dele."
+    - speaker: 1
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 0}
+      message: Para onde eles levaram o meu ovo?
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: fdb5ceac2c3340c42b13a31278783287, type: 3}
+      message: "Eles correram para a caverna, perto do Reino Fungi.. Mas j\xE1 devo
+        avis\xE1-los que ser\xE1 perigoso e dif\xEDcil. A caverna \xE9 escura demais!
+        Al\xE9m disso, um item ex\xF3tico como esse ovo... O Cogumelo n\xE3o vai
+        largar t\xE3o f\xE1cil assim.\r"
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: e00123a4e10dc2f4ebe58686a053d00b, type: 3}
+      message: "Voc\xEAs v\xE3o precisar de ajuda para entrar na caverna! Na primeira
+        entrada \xE0 direita existe uma clareira. Voc\xEAs v\xE3o encontrar uma fruta
+        muito brilhante que pode ajudar voc\xEAs a andarem pelas cavernas escuras. "
+    - speaker: 4
+      speakerAnim: {fileID: 0}
+      speakSound: {fileID: 8300000, guid: e00123a4e10dc2f4ebe58686a053d00b, type: 3}
+      message: "Pegue a fruta e traga para o Timo da loja de po\xE7\xF5es, tenho
+        certeza que ele pode ajudar voc\xEAs a criar algo para iluminar a caverna
+        em sua jornada.\r"
+    ran: 0
+--- !u!65 &1938028901535527794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938028901535527692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
