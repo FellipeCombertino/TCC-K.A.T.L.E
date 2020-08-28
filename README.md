@@ -1,6 +1,6 @@
 # TCC-K.A.T.L.E
 
-TCC desenvolvido durante o 7º e 8º Semestre do curso Design de Games - Anhembi Morumbi
+TCC em desenvolvimento durante o 7º e 8º Semestre do curso Design de Games - Universidade Anhembi Morumbi
 
 K.A.T.L.E é um jogo single player para PC do gênero aventura com elementos de plataforma, possuindo foco na exploração e narrativa. Estará disponível em diversas plataformas digitais futuramente.
 
